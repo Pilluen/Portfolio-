@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<title>Charles Oluwaseun portfolio</title> Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { background: #fff8f0; color: #5B3A29; font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; }
+    header { background: #5B3A29; color: #fff; padding: 30px 0 20px 0; text-align: center; }
+    .container { max-width: 800px; margin: 30px auto; background: #fff; border-radius: 10px; box-shadow: 0 4px 18px rgba(91,58,41,0.08); padding: 30px; }
+    h1 { margin: 0 0 10px 0; }
+    .bio { font-size: 1.1rem; margin-bottom: 30px; color: #7b5338; text-align: center; }
+    .slideshow-container { position: relative; max-width: 100%; margin: auto; background: #f1e3d3; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(91,58,41,0.07);}
+    .slides { display: none; width: 100%; height: 300px; object-fit: contain; background: #fff; padding: 10px 0; }
+    .prev, .next { cursor: pointer; position: absolute; top: 50%; width: auto; padding: 12px; margin-top: -32px; color: #fff; font-weight: bold; font-size: 28px; border-radius: 0 3px 3px 0; background: #5B3A29cc; user-select: none; transition: background 0.2s; }
+    .next { right: 0; border-radius: 3px 0 0 3px;}
+    .prev:hover, .next:hover { background: #7b5338; }
+    .contact { margin-top: 32px; text-align: center; }
+    .contact a { color: #fff; background: #5B3A29; padding: 8px 18px; border-radius: 5px; text-decoration: none; font-weight: bold; margin: 0 5px; transition: background 0.2s;}
+    .contact a:hover { background: #7b5338; }
+    @media (max-width: 600px) {
+      .container { padding: 12px; }
+      .slides { height: 180px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Charles Oluwaseun</h1>
+    <div class="bio">
+      A graphic designer, Video Editor, Photo Editor, Brand identity designer and management,<br>
+      FLYERS, LOGOS. Etc
+    </div>
+  </header>
+  <div class="container">
+    <div class="slideshow-container">
+      <img class="slides" src="https://drive.google.com/uc?export=view&id=1XhAV4ybJYVhHAa1uT6PgMasDNdJsU-24" alt="Design 1">
+      <img class="slides" src="https://drive.google.com/uc?export=view&id=1tBCWn3ZIDXrHGHQfSSc8cxbwVkz4W6jL" alt="Design 2">
+      <img class="slides" src="https://drive.google.com/uc?export=view&id=1ET9unsKvfXg7pD9oEnoblJQFX78a7xoZ" alt="Design 3">
+      <img class="slides" src="https://drive.google.com/uc?export=view&id=1N8UoaXAs-BqVpcISgr_4n4OZjCH3_yBT" alt="Design 4">
+      <img class="slides" src="https://drive.google.com/uc?export=view&id=1T0dn6b9RCCvkB1UQwYCG-9rL01r2XIsR" alt="Design 5">
+      <img class="slides" src="https://drive.google.com/uc?export=view&id=17cHVNe-_syT93sz9gXQwgcE1ciok_UCb" alt="Design 6">
+      <img class="slides" src="https://drive.google.com/uc?export=view&id=1Q7Q76dDpBi3qyeyXpETILyTgh0l-NUVx" alt="Design 7">
+      <img class="slides" src="https://drive.google.com/uc?export=view&id=197yFn0-teKYgQTaK4JCFB_rAQnEQ9ujR" alt="Design 8">
+      <img class="slides" src="https://drive.google.com/uc?export=view&id=1miPe8VAy9lsUUQomdF23RqQgEyw7FQwK" alt="Design 9">
+      <img class="slides" src="https://drive.google.com/uc?export=view&id=1b6OAVvFNXhd8CZnajPvl_EYaeGqTvFCm" alt="Design 10">
+      <img class="slides" src="https://drive.google.com/uc?export=view&id=12VOZOr7hSlYIVBRkNvP0byNuHDdtz4Ma" alt="Design 11">
+      <img class="slides" src="https://drive.google.com/uc?export=view&id=1do__cdTfqRJbyErdspO_mbfszFtkow-a" alt="Design 12">
+      <img class="slides" src="https://drive.google.com/uc?export=view&id=1CEQlI5vo3RO7mg0pjdjIvIY0aez09qPI" alt="Design 13">
+      <img class="slides" src="https://drive.google.com/uc?export=view&id=1n_msbpr4wCVBK-48aACXwetMbICLRQZ5" alt="Design 14">
+      <img class="slides" src="https://drive.google.com/uc?export=view&id=1uRbl181E21OxMOUe0DS10MRO0xTg4qBl" alt="Design 15">
+      <img class="slides" src="https://drive.google.com/uc?export=view&id=1mzZPby0xVmK8qAty_F6H9iTirBdR02Uq" alt="Design 16">
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div class="contact">
+      <a href="tel:09021972098">Call: 09021972098</a>
+      <a href="https://wa.me/message/GJLW4YNGF4S4D1" target="_blank">WhatsApp Me</a>
+    </div>
+  </div>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) { showSlides(slideIndex += n); }
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("slides");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex-1].style.display = "block";
+    }
+    // Show first slide on load
+    window.onload = function() { showSlides(slideIndex); };
+  </script>
+</body>
+</html>
